@@ -328,7 +328,7 @@ Resources:
       HealthCheckIntervalSeconds: 15
       HealthCheckTimeoutSeconds: 10
       Port: !Ref ContainerPort
-      Protocol: HTTP
+      Protocol: HTTPS
       TargetGroupAttributes:
         - Key: deregistration_delay.timeout_seconds
           Value: 5 # ECS Default is 300; Copilot default is 60.

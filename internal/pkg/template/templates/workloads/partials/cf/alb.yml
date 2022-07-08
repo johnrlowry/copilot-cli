@@ -24,7 +24,7 @@ TargetGroup:
     HealthCheckTimeoutSeconds: {{.HTTPHealthCheck.Timeout}}
     {{- end}}
     Port: !Ref ContainerPort
-    Protocol: HTTP
+    Protocol: HTTPS
     {{- if .HTTPVersion}}
     ProtocolVersion: {{.HTTPVersion}}
     {{- end}}
